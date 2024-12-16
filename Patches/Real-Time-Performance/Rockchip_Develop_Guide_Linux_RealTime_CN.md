@@ -65,11 +65,12 @@ Rockchip Electronics Co., Ltd.
 
  **修订记录**
 
-| **日期**   | **版本** | **作者**   | **修改说明**           |
-| ---------- | :------- | :--------- | :--------------------- |
-| 2023-11-20 | V0.0.1   | czz        | 初始版本               |
-| 2024-06-20 | V1.0.0   | LinJianhua | 更新到V1.0.0           |
-| 2024-08-20 | V1.1.0   | LinJianhua | 增加Kernel-6.1.84 补丁 |
+| **日期**   | **版本** | **作者**   | **修改说明**                    |
+| ---------- | :------- | :--------- | :------------------------------ |
+| 2023-11-20 | V0.0.1   | czz        | 初始版本                        |
+| 2024-06-20 | V1.0.0   | LinJianhua | 更新到V1.0.0                    |
+| 2024-08-20 | V1.1.0   | LinJianhua | 增加Kernel-6.1.84 补丁          |
+| 2024-12-20 | V1.2.0   | LinJianhua | 增加内核5.10.226 和 6.1.99 补丁 |
 
 ---
 
@@ -162,6 +163,24 @@ Date:   Thu Jun 20 17:13:52 2024 +0800
     Signed-off-by: Cai YiWei <cyw@rock-chips.com>
 ```
 
+Kernel-5.10.226
+
+```bash
+commit ba24d825c1b9eec447b5623d259d4d30a1e8bb41
+Author: Cai YiWei <cyw@rock-chips.com>
+Date:   Wed Nov 27 17:41:55 2024 +0800
+
+    media: rockchip: isp: fix bay3d if two readback for isp32
+
+    if over resolution specification will need two readback,
+    first readback need to discard bay3d write data.
+
+    Change-Id: I940949109d18f54bde8ebe4650d2abebfe7b1ba8
+    Signed-off-by: Cai YiWei <cyw@rock-chips.com>
+```
+
+
+
 Kernel-6.1.75
 
 ```shell
@@ -212,6 +231,24 @@ Date:   Sat Aug 17 17:35:51 2024 +0800
 
     Change-Id: If6edd552c88012d97f5eefc5e1d97a4f1683f171
 ```
+
+Kernel-6.1.99
+
+```bash
+commit d167060a8ba719aa84d269d388333e159d09201c
+Author: Tao Huang <huangtao@rock-chips.com>
+Date:   Mon Dec 9 19:04:08 2024 +0800
+
+    ASoC: rockchip: Fix typos in Rockchip copyright notices
+
+    There are many cases in which the company name is misspelled.
+    The patch fixes these typos.
+
+    Signed-off-by: Tao Huang <huangtao@rock-chips.com>
+    Change-Id: Ib0076a2adfa3c85db1c7cb3478c48fc8c4d2bef0
+```
+
+
 
 ## PREEMPT_RT
 
