@@ -1,6 +1,6 @@
-发布版本：V1.1.0
+发布版本：V1.2.0
 
-日期：2024-06-20
+日期：2024-12-20
 
 文件密级：□绝密   □秘密    □内部资料   ■公开
 
@@ -63,18 +63,16 @@ Rockchip Linux SDK 中在 docs 目录分为中文（cn）和英文（en）。其
 
 ### 音频模块文档 (AUDIO)
 
-包含麦克风的音频算法和音频/Pulseaudio模块的相关开发文档。具体文档如下：
+包含音频模块的相关开发文档。具体文档如下：
 
 ```
 docs/cn/Common/AUDIO/
-├── Algorithms
-├── Rockchip_Developer_Guide_Audio_CN.pdf
-└── Rockchip_Developer_Guide_PulseAudio_CN.pdf
+└── Rockchip_Developer_Guide_Audio_CN.pdf
 ```
 
 ### 外设支持列表 (AVL)
 
-详见 `<SDK>/docs/cn/Common/AVL` 目录，其包含DDR/eMMC/NAND FLASH/WIFI-BT/CAMERA等支持列表， 其支持列表实时更新在redmine上，链接如下：
+详见 `<SDK>/docs/cn/Common/AVL` 目录，其包含DDR/eMMC/NAND FLASH/UFS/WIFI-BT/CAMERA等支持列表， 其支持列表实时更新在redmine上，链接如下：
 
 ```
 https://redmine.rockchip.com.cn/projects/fae/documents
@@ -82,7 +80,7 @@ https://redmine.rockchip.com.cn/projects/fae/documents
 
 #### DDR支持列表
 
-Rockchip 平台 DDR 颗粒支持列表，详见 `<SDK>/docs/cn/Common/AVL` 目录下《Rockchip_Support_List_DDR_Ver2.61.pdf》，下表表示DDR的支持程度，只建议选用√、T/A标示的颗粒。
+Rockchip 平台 DDR 颗粒支持列表，详见 `<SDK>/docs/cn/Common/AVL` 目录下《Rockchip_Support_List_DDR_Ver2.64.pdf》，下表表示DDR的支持程度，只建议选用√、T/A标示的颗粒。
 表 1‑1 Rockchip DDR Support Symbol
 
 | **Symbol** | **Description**                  |
@@ -93,7 +91,7 @@ Rockchip 平台 DDR 颗粒支持列表，详见 `<SDK>/docs/cn/Common/AVL` 目�
 
 #### eMMC支持列表
 
-Rockchip 平台 eMMC 颗粒支持列表，详见  `<SDK>/docs/cn/Common/AVL` 目录下《RKeMMCSupportList_Ver1.81_20240329.pdf》，下表中所标示的EMMC支持程度表，只建议选用√、T/A标示的颗粒。
+Rockchip 平台 eMMC 颗粒支持列表，详见  `<SDK>/docs/cn/Common/AVL` 目录下《RKeMMCSupportList_Ver1.86_20241129.pdf》，下表中所标示的EMMC支持程度表，只建议选用√、T/A标示的颗粒。
 表 1‑2 Rockchip EMMC Support Symbol
 
 | **Symbol** | **Description**                                         |
@@ -114,7 +112,7 @@ Rockchip 平台 eMMC 颗粒支持列表，详见  `<SDK>/docs/cn/Common/AVL` 目
 
 #### SPI Nor及SLC Nand支持列表
 
-Rockchip 平台 SPI Nor 及 SLC Nand 支持列表，详见 `<SDK>/docs/cn/Common/AVL` 目录下《RK_SpiNor_and_SLC_Nand_SupportList_V1.47_20240326.pdf》，文档中也有标注SPI Nand的型号，可供选型。下表中所标示的Nand支持程度表，只建议选用√、T/A标示的颗粒。
+Rockchip 平台 SPI Nor 及 SLC Nand 支持列表，详见 `<SDK>/docs/cn/Common/AVL` 目录下《RK_SpiNor_and_SLC_Nand_SupportList_V1.51_20241101.pdf》，文档中也有标注SPI Nand的型号，可供选型。下表中所标示的Nand支持程度表，只建议选用√、T/A标示的颗粒。
 
 表 1‑3 Rockchip SPI Nor and SLC Nand Support Symbol
 
@@ -132,6 +130,21 @@ Rockchip 平台 Nand Flash 支持列表，详见`<SDK>/docs/Common/AVL`目录下
 文档中有标注 Nand Flash 的型号，可供选型。下表中所标示的 Nand Flash 支持程度表，只建议选用√、T/A标示的颗粒。
 
 表 1‑4 Rockchip Nand Flash Support Symbol
+
+| **Symbol** | **Description**                                         |
+| ---------- | :------------------------------------------------------ |
+| √          | Fully Tested , Applicable and Mass Production           |
+| T/A        | Fully Tested , Applicable and Ready for Mass Production |
+| D/A        | Datasheet Applicable,Need Sample to Test                |
+| N/A        | Not Applicable                                          |
+
+#### UFS支持列表
+
+Rockchip 平台 UFS 支持列表，详见`<SDK>/docs/Common/AVL`目录下
+《RK_UFS_SupportList_V1.01_20241012.pdf》，
+文档中有标注 UFS 的型号，可供选型。下表中所标示的 UFS 支持程度表，只建议选用√、T/A标示的颗粒。
+
+表 1‑5 Rockchip UFS Support Symbol
 
 | **Symbol** | **Description**                                         |
 | ---------- | :------------------------------------------------------ |
@@ -193,33 +206,41 @@ docs/cn/Common/DDR/
 
 ### 调试模块文档 (DEBUG)
 
-该模块文档主要包含 Rockchip 平台DS5、FT232H_USB2JTAG、 GDB_ADB、Eclipse_OpenOCD等调试工具使用介绍。
+该模块文档主要包含 Rockchip 平台Eclipse_OpenOCD等调试工具使用介绍。
 
 ```
 docs/cn/Common/DEBUG/
-├── Rockchip_Developer_Guide_DS5_CN.pdf
-├── Rockchip_Developer_Guide_FT232H_USB2JTAG.pdf
-├── Rockchip_Developer_Guide_GDB_Over_ADB_CN.pdf
 └── Rockchip_Developer_Guide_GNU_MCU_Eclipse_OpenOCD_CN.pdf
 ```
 
 ### 显示模块文档 (DISPLAY)
 
-该模块文档主要包含 Rockchip 平台DRM、DP、HDMI、MIPI、RK628等显示模块的开发文档。
+该模块文档主要包含 Rockchip 平台DRM、DP、HDMI、LVDS、MIPI、RGB、RK628等显示模块的开发文档。
 
 ```
 docs/cn/Common/DISPLAY/
+├── BT656-BT1120
 ├── DP
+├── DRM
+├── HDCP
 ├── HDMI
+├── LVDS
 ├── MIPI
+├── RGB
 ├── RK628
-├── Rockchip_BT656_TX_AND_BT1120_TX_Developer_Guide_CN.pdf
-├── Rockchip_Developer_Guide_Baseparameter_Format_Define_And_Use_CN.pdf
-├── Rockchip_Developer_Guide_DRM_Display_Driver_CN.pdf
-├── Rockchip_Developer_Guide_RGB_MCU_CN.pdf
-├── Rockchip_Develop_Guide_DRM_Direct_Show_CN.pdf
-├── Rockchip_DRM_Panel_Porting_Guide_V1.6_20190228.pdf
-└── Rockchip_RK3588_Developer_Guide_MIPI_DSI2_CN.pdf
+├── Vsync
+└── eDP
+```
+
+### DMSC模块文档 (DSMC)
+
+该模块文档主要包含 Rockchip 平台双倍速率串行存储器控制器的开发文档。Double Data Rate Serial Memory Controller（DSMC），双倍速率串行存储器控制器，通过命令、地址、
+数据线分时复用，数据上下沿传输，具有少引脚数、高带宽的特点。
+
+```
+docs/cn/Common/DSMC/
+├── Rockchip_Developer_Guide_DSMC_CN.pdf
+└── Rockchip_Developer_Guide_SLAVE_DSMC_CN.pdf
 ```
 
 ### 动态调整频率和电压模块文档 (DVFS)
@@ -234,18 +255,20 @@ docs/cn/Common/DVFS/
 └── Rockchip_Developer_Guide_Devfreq_CN.pdf
 ```
 
-### 文件系统模块文档 (FS)
+### FLEXBUS模块文档 (FLEXBUS)
 
-该模块文档主要包含 Rockchip平台文件系统的相关开发文档。
+该模块文档主要包含 Rockchip平台FLEXBUS的相关开发文档。
 
 ```
-docs/cn/Common/FS/
-└── Rockchip_Developer_FAQ_FileSystem_CN.pdf
+docs/cn/Common/FLEXBUS/
+├── Rockchip_Developer_Guide_Linux_FLEXBUS_ADC_and_DAC_MODE_CN.pdf
+├── Rockchip_Developer_Guide_Linux_FLEXBUS_CN.pdf
+└── Rockchip_Developer_Guide_Linux_FLEXBUS_FSPI_MODE_CN.pdf
 ```
 
 ### 以太网模块文档 (GMAC)
 
-该模块文档主要包含 Rockchip平台以太网 GMAC 接口的相关开发文档。
+该模块文档主要包含 Rockchip平台以太网 GMAC 接口包含DPDK相关开发文档。
 
 ```
 docs/cn/Common/GMAC/
@@ -299,17 +322,16 @@ ISP1.X主要适用于RK3399/RK3288/PX30/RK3326/RK1808等
 ISP21主要适用于RK3566_RK3568等
 ISP30主要适用于RK3588等
 ISP32-lite主要适用于RK3562等
+ISP39主要适用于RK3576等
 
 包含ISP开发文档、VI驱动开发文档、IQ Tool开发文档、调试文档和颜色调试文档。具体文档如下：
 
 ```
 docs/cn/Common/ISP/
-├── ISP1.X
-├── ISP21
-├── ISP30
-├── ISP32-lite
 └── The-Latest-Camera-Documents-Link.txt
 ```
+
+文档参考：https://redmine.rock-chips.com/documents/53
 
 > **说明：**
 > RK3288/RK3399/RK3326/RK1808 Linux(kernel-4.4) rkisp1 driver、sensor driver、vcm driver 参考文档: 《RKISP_Driver_User_Manual_v1.3_20190919》
@@ -358,7 +380,7 @@ docs/cn/Common/MPP/
 
 ### NPU模块文档 (NPU)
 
-SDK提供了RKNPU相关开发工具，具体如下：
+SDK提供了RKNPU2相关开发工具，具体如下：
 
 **RKNN-TOOLKIT2** ：
 
@@ -381,11 +403,11 @@ RKNN-Toolkit2是在PC上进行RKNN模型生成及评估的开发套件：
 具体使用说明请参考当前 `doc/` 的目录文档：
 
 ```
-├── 01_Rockchip_RKNPU_Quick_Start_RKNN_SDK_V2.0.0beta0_CN.pdf
-├── 01_Rockchip_RKNPU_Quick_Start_RKNN_SDK_V2.0.0beta0_EN.pdf
+├── 01_Rockchip_RKNPU_Quick_Start_RKNN_SDK_V2.3.0_CN.pdf
+├── 01_Rockchip_RKNPU_Quick_Start_RKNN_SDK_V2.3.0_EN.pdf
 ...
-├── RKNNToolKit2_API_Difference_With_Toolkit1-V2.0.0beta0.md
-└── RKNNToolKit2_OP_Support-v2.0.0-beta0.md
+├── RKNNToolKit2_API_Difference_With_Toolkit1-V2.3.0.md
+└── RKNNToolKit2_OP_Support-v2.3.0.md
 
 ```
 
@@ -396,12 +418,12 @@ RKNN API的开发说明在工程目录 `external/rknpu2`下，用于推理RKNN-T
 
 ```
 ...
-├── 02_Rockchip_RKNPU_User_Guide_RKNN_SDK_V2.0.0beta0_CN.pdf
-├── 02_Rockchip_RKNPU_User_Guide_RKNN_SDK_V2.0.0beta0_EN.pdf
-├── 03_Rockchip_RKNPU_API_Reference_RKNN_Toolkit2_V2.0.0beta0_CN.pdf
-├── 03_Rockchip_RKNPU_API_Reference_RKNN_Toolkit2_V2.0.0beta0_EN.pdf
-├── 04_Rockchip_RKNPU_API_Reference_RKNNRT_V2.0.0beta0_CN.pdf
-├── 04_Rockchip_RKNPU_API_Reference_RKNNRT_V2.0.0beta0_EN.pdf
+├── 02_Rockchip_RKNPU_User_Guide_RKNN_SDK_V2.3.0_CN.pdf
+├── 02_Rockchip_RKNPU_User_Guide_RKNN_SDK_V2.3.0_EN.pdf
+├── 03_Rockchip_RKNPU_API_Reference_RKNN_Toolkit2_V2.3.0_CN.pdf
+├── 03_Rockchip_RKNPU_API_Reference_RKNN_Toolkit2_V2.3.0_EN.pdf
+├── 04_Rockchip_RKNPU_API_Reference_RKNNRT_V2.3.0_CN.pdf
+├── 04_Rockchip_RKNPU_API_Reference_RKNNRT_V2.3.0_EN.pdf
 ```
 
 ### NVM模块文档 (NVM)
@@ -413,7 +435,9 @@ docs/cn/Common/NVM/
 ├── Rockchip_Application_Notes_Storage_CN.pdf
 ├── Rockchip_Developer_FAQ_Storage_CN.pdf
 ├── Rockchip_Developer_Guide_Dual_Storage_CN.pdf
-└── Rockchip_Developer_Guide_SATA_CN.pdf
+├── Rockchip_Developer_Guide_Linux_Flash_Open_Source_Solution_CN.pdf
+├── Rockchip_Developer_Guide_SATA_CN.pdf
+└── Rockchip_Developer_Guide_UFS_CN.pdf
 ```
 
 ### PCIe模块文档 (PCIe)
@@ -435,12 +459,8 @@ docs/cn/Common/PCIe/
 
 ```
 docs/cn/Common/PERF/
-├── Rockchip_Develop_Guide_Linux_RealTime_Performance_Test_Report_CN.pdf
-├── Rockchip_Optimize_Tutorial_Linux_IO_CN.pdf
-├── Rockchip_Quick_Start_Linux_Perf_CN.pdf
-├── Rockchip_Quick_Start_Linux_Performance_Analyse_CN.pdf
-├── Rockchip_Quick_Start_Linux_Streamline_CN.pdf
-└── Rockchip_Quick_Start_Linux_Systrace_CN.pdf
+├── Rockchip_Developer_Guide_Linux_RealTime_Performance_Test_Report_CN.pdf
+└── Rockchip_Quick_Start_Linux_Performance_Analyse_CN.pdf
 ```
 
 ### GPIO模块文档 (PINCTRL)
@@ -514,7 +534,6 @@ docs/cn/Common/SARADC/
 docs/cn/Common/SECURITY/
 ├── Rockchip_Developer_Guide_Anti_Copy_Board_CN.pdf
 ├── Rockchip_Developer_Guide_OTP_CN.pdf
-├── Rockchip_Developer_Guide_Secure_Boot_for_UBoot_Next_Dev_CN.pdf
 └── Rockchip_Developer_Guide_TEE_SDK_CN.pdf
 ```
 
@@ -542,9 +561,6 @@ docs/cn/Common/THERMAL/
 
 ```
 docs/cn/Common/TOOL/
-├── Production-Guide-For-Firmware-Download.pdf
-├── RKUpgrade_Dll_UserManual.pdf
-├── Rockchip-User-Guide-ProductionTool-CN.pdf
 ├── Rockchip_Introduction_Partition_CN.pdf
 └── Rockchip_User_Guide_Production_For_Firmware_Download_CN.pdf
 ```
@@ -579,12 +595,7 @@ docs/cn/Common/UART/
 
 ```
 docs/cn/Common/UBOOT/
-├── Rockchip_Developer_Guide_Linux_AB_System_CN.pdf
-├── Rockchip_Developer_Guide_U-Boot_TFTP_Upgrade_CN.pdf
-├── Rockchip_Developer_Guide_UBoot_MMC_Device_Analysis_CN.pdf
-├── Rockchip_Developer_Guide_UBoot_MTD_Block_Device_Design_CN.pdf
-├── Rockchip_Developer_Guide_UBoot_Nextdev_CN.pdf
-└── Rockchip_Introduction_UBoot_rkdevelop_vs_nextdev_CN.pdf
+└── Rockchip_Developer_Guide_UBoot_Nextdev_CN.pdf
 ```
 
 ### USB模块文档 (USB)
@@ -594,7 +605,6 @@ docs/cn/Common/UBOOT/
 ```
 docs/cn/Common/USB/
 ├── Rockchip_Developer_Guide_Linux_USB_Initialization_Log_Analysis_CN.pdf
-├── Rockchip_Developer_Guide_Linux_USB_PHY_CN.pdf
 ├── Rockchip_Developer_Guide_Linux_USB_Performance_Analysis_CN.pdf
 ├── Rockchip_Developer_Guide_USB2_Compliance_Test_CN.pdf
 ├── Rockchip_Developer_Guide_USB_CN.pdf
@@ -603,7 +613,6 @@ docs/cn/Common/USB/
 ├── Rockchip_Developer_Guide_USB_SQ_Test_CN.pdf
 ├── Rockchip_Introduction_USB_SQ_Tool_CN.pdf
 ├── Rockchip_RK3399_Developer_Guide_USB_CN.pdf
-├── Rockchip_RK3399_Developer_Guide_USB_DTS_CN.pdf
 ├── Rockchip_RK356x_Developer_Guide_USB_CN.pdf
 ├── Rockchip_RK3576_Developer_Guide_USB_CN.pdf
 ├── Rockchip_RK3588_Developer_Guide_USB_CN.pdf
@@ -642,27 +651,26 @@ docs/cn/Common/WATCHDOG/
 
 ### 应用指南（ApplicationNote）
 
-主要介绍Rockchip平台上应用相关开发说明， 比如ROS、RetroArch、USB等
+主要介绍Rockchip平台上应用相关开发说明， 比如RKIPC、ROS、RetroArch、USB、EtherCAT等
 
 ```
 docs/cn/Linux/ApplicationNote/
 ├── Rockchip_Developer_Guide_Linux_Flash_Open_Source_Solution_CN.pdf
+├── Rockchip_Developer_Guide_Linux_RKIPC_CN.pdf
 ├── Rockchip_Instruction_Linux_ROS2_CN.pdf
 ├── Rockchip_Instruction_Linux_ROS_CN.pdf
 ├── Rockchip_Quick_Start_Linux_USB_Gadget_CN.pdf
-├── Rockchip_Use_Guide_Linux_EtherCAT_IgH_CN.pdf
-└── Rockchip_Use_Guide_Linux_RetroArch_CN.pdf
+└── Rockchip_Use_Guide_Linux_EtherCAT_IgH_CN.pdf
 ```
 
 ### 音频相关开发（Audio）
 
-主要介绍Rockchip平台上自研音频算法。
+主要介绍Rockchip平台上自研麦克风的音频算法和Pulseaudio。
 
 ```
 docs/cn/Linux/Audio/
-├── Rockchip_Developer_Guide_Microphone_Array_TEST_CN.pdf
-├── Rockchip_Developer_Guide_Microphone_Array_Tuning.pdf
-└── Rockchip_Introduction_Linux_Audio_3A_Algorithm_CN.pdf
+├── Algorithms
+└── Rockchip_Developer_Guide_PulseAudio_CN.pdf
 ```
 
 ### 摄像头相关开发（Camera）
@@ -675,6 +683,15 @@ docs/cn/Linux/Camera/
 ├── Rockchip_Developer_Guide_Linux_RMSL_CN.pdf
 ├── Rockchip_Trouble_Shooting_Linux4.4_Camera_CN.pdf
 └── Rockchip_Trouble_Shooting_Linux5.10_Camera_CN.pdf
+```
+
+### DPDK相关开发（Camera）
+
+主要介绍Rockchip平台上DPDK开发指南。
+
+```
+docs/cn/Linux/DPDK/
+└── Rockchip_Developer_Guide_Linux_DPDK_CN.pdf
 ```
 
 ### 容器相关开发（Docker）
@@ -834,15 +851,6 @@ docs/cn/Linux/Wifibt/
 └── WIFI性能测试PC工具
 ```
 
-### DPDK模块（DPDK）
-
-主要介绍Rockchip Linux平台上DPDK开发指南。
-
-```
-docs/cn/Linux/DPDK/
-└── Rockchip_Developer_Guide_Linux_DPDK_CN.pdf
-```
-
 ## 芯片平台相关文档 (Socs)
 
 详见 `<SDK>/docs/cn/<chipset_name>` 目录下的文档。正常会包含该芯片的发布说明、芯片快速入门、软件开发指南、硬件开发指南、Datasheet等。
@@ -880,7 +888,6 @@ Rockchip 平台会有对应的硬件参考文档随 SDK 软件包一起发布。
 ```
 docs/cn/Others/
 ├── Rockchip_Developer_Guide_Repo_Mirror_Server_Deploy_CN.pdf
-├── Rockchip_Trouble_Shooting_Linux_Real-Time_Performance_CN.pdf
 ├── Rockchip_User_Guide_Bug_System_CN.pdf
 └── Rockchip_User_Guide_SDK_Application_And_Synchronization_CN.pdf
 ```

@@ -1,6 +1,6 @@
 Release Version: V1.2.0
 
-Release Date: 2024-06-20
+Release Date: 2024-12-20
 
 Security Level: □Top-Secret   □Secret   □Internal   ■Public
 
@@ -57,13 +57,11 @@ For details, see the `<SDK>/docs/en/Common/AMP` directory. The AMP system is a g
 
 ### Audio Module Document (AUDIO)
 
-It includes audio algorithms for microphones and relevant development documents for audio/Pulseaudio modules. The reference documents are as follows:
+It includes development documents for audio modules. The reference documents are as follows:
 
 ```
 docs/en/Common/AUDIO/
-├── Algorithms
-├── Rockchip_Developer_Guide_Audio_EN.pdf
-└── Rockchip_Developer_Guide_PulseAudio_EN.pdf
+└── Rockchip_Developer_Guide_Audio_EN.pdf
 ```
 
 ### Peripheral Components Support List (AVL)
@@ -76,7 +74,7 @@ https://redmine.rockchip.com.cn/projects/fae/documents
 
 #### DDR Support List
 
-For the Rockchip platform DDR chip support list, please refer to "Rockchip_Support_List_DDR_Ver2.61.pdf" in the `<SDK>/docs/en/Common/AVL` directory. The following table shows the support level of DDR. It is only recommended to use chips marked with √ and T/A.
+For the Rockchip platform DDR chip support list, please refer to "Rockchip_Support_List_DDR_Ver2.64.pdf" in the `<SDK>/docs/en/Common/AVL` directory. The following table shows the support level of DDR. It is only recommended to use chips marked with √ and T/A.
 Table 1‑1 Rockchip DDR Support Symbol
 
 | **Symbol** | **Description**                  |
@@ -87,7 +85,7 @@ Table 1‑1 Rockchip DDR Support Symbol
 
 #### eMMC  Support List
 
-The eMMC chip support list for Rockchip platform can be found in the `<SDK>/docs/en/Common/AVL` directory in the document titled 'RKeMMCSupportList_Ver1.81_20240329.pdff'. It is recommended to choose chips marked with √ or T/A in the support level table below.
+The eMMC chip support list for Rockchip platform can be found in the `<SDK>/docs/en/Common/AVL` directory in the document titled 'RKeMMCSupportList_Ver1.86_20241129.pdf'. It is recommended to choose chips marked with √ or T/A in the support level table below.
 Table 1‑2 Rockchip eMMC Support Symbol
 
 | **Symbol** | **Description**                                         |
@@ -110,7 +108,7 @@ If there are any doubts about selection, you can also directly contact the Rockc
 
 #### SPI NOR and SLC NAND  Flash Support List
 
-The SPI NOR and SLC NAND Flash support list for Rockchip platform, can be found in the  document titled "RK_SpiNor_and_SLC_Nand_SupportList_V1.47_20240326.pdf"  in the `<SDK>/docs/en/Common/AVL` directory, the document also indicates the models of SPI NAND that can be selected. It is recommended to choose chips marked with √ or T/A in the support level table below.
+The SPI NOR and SLC NAND Flash support list for Rockchip platform, can be found in the  document titled "RK_SpiNor_and_SLC_Nand_SupportList_V1.51_20241101.pdf"  in the `<SDK>/docs/en/Common/AVL` directory, the document also indicates the models of SPI NAND that can be selected. It is recommended to choose chips marked with √ or T/A in the support level table below.
 
 Table 1‑3 Rockchip SPI NOR and SLC NAND Support Symbol
 
@@ -144,7 +142,20 @@ For any questions about chip selection, it is recommended to contact the Rockchi
 
 Camera Support List for Rockchip Platform can be found in the [Camera Module Support List](https://redmine.rock-chips.com/projects/rockchip_camera_module_support_list/camera). This online list  contains a comprehensive collection of Camera Modules extensively tested on the Rockchip platform. It is advisable to select models based on the list.
 
-For any questions about  module selection, it is recommended to contact the Rockchip FAE team at <fae@rock-chips.com>.
+For any questions about  module selection, it is recommended to contact the Rockchip FAE team at sw.fae@rock-chips.com>.
+
+#### UFS Support List
+
+The UFS support list for Rockchip platforms can be found in the document `<SDK>/docs/Common/AVL` directory under "RK_UFS_SupportList_V1.01_20241012.pdf". The document includes the UFS models with annotations for selection. The UFS support levels indicated in the table below suggest that only the particles marked with √ or T/A should be selected.
+
+Table 1‑5 Rockchip UFS Support Symbol
+
+| **Symbol** | **Description**                                         |
+| ---------- | :------------------------------------------------------ |
+| √          | Fully Tested , Applicable and Mass Production           |
+| T/A        | Fully Tested , Applicable and Ready for Mass Production |
+| D/A        | Datasheet Applicable,Need Sample to Test                |
+| N/A        | Not Applicable                                          |
 
 ### CAN Module Document (CAN)
 
@@ -187,33 +198,40 @@ docs/en/Common/DDR/
 
 ### Debug Module Document (DEBUG)
 
-This module document mainly includes introduction to the use of debugging tools such as DS5, FT232H_USB2JTAG, GDB_ADB, Eclipse_OpenOCD, etc. for Rockchip platform.
+This module document mainly includes introduction to the use of debugging tools such asEclipse_OpenOCD, etc. for Rockchip platform.
 
 ```
 docs/en/Common/DEBUG/
-├── Rockchip_Developer_Guide_DS5_EN.pdf
-├── Rockchip_Developer_Guide_FT232H_USB2JTAG.pdf
-├── Rockchip_Developer_Guide_GDB_Over_ADB_EN.pdf
-└── Rockchip_Developer_Guide_GNU_MCU_Eclipse_OpenOCD_EN.pdf
+└── Rockchip_Developer_Guide_GNU_MCU_Eclipse_OpenOCD_CN.pdf
 ```
 
 ### Display Module Document (DISPLAY)
 
-This module document mainly includes development documents about DRM, DP, HDMI, MIPI, RK628 and other display modules for Rockchip platform.
+This module document mainly includes development documents about DRM,DP,HDMI,LVDS,MIPI,RGB,RK628 and other display modules for Rockchip platform.
 
 ```
 docs/en/Common/DISPLAY/
+├── BT656-BT1120
 ├── DP
+├── DRM
+├── HDCP
 ├── HDMI
+├── LVDS
 ├── MIPI
+├── RGB
 ├── RK628
-├── Rockchip_BT656_TX_AND_BT1120_TX_Developer_Guide_EN.pdf
-├── Rockchip_Developer_Guide_Baseparameter_Format_Define_And_Use_EN.pdf
-├── Rockchip_Developer_Guide_DRM_Display_Driver_EN.pdf
-├── Rockchip_Developer_Guide_RGB_MCU_EN.pdf
-├── Rockchip_Develop_Guide_DRM_Direct_Show_EN.pdf
-├── Rockchip_DRM_Panel_Porting_Guide_V1.6_20190228.pdf
-└── Rockchip_RK3588_Developer_Guide_MIPI_DSI2_EN.pdf
+├── Vsync
+└── eDP
+```
+
+### DMSC Module Documentation (DSMC)
+
+This module documentation mainly contains the development documentation for the Double Data Rate Serial Memory Controller (DSMC) on the Rockchip platform. The Double Data Rate Serial Memory Controller (DSMC) utilizes time-division multiplexing of command, address, and data lines, with data transfer occurring on both the rising and falling edges, featuring fewer pins and higher bandwidth.
+
+```
+docs/en/Common/DSMC/
+├── Rockchip_Developer_Guide_DSMC_EN.pdf
+└── Rockchip_Developer_Guide_SLAVE_DSMC_EN.pdf
 ```
 
 ### Dynamic Frequency and Voltage Adjustment Module Documentation (DVFS)
@@ -228,13 +246,15 @@ docs/en/Common/DVFS/
 └── Rockchip_Developer_Guide_Devfreq_EN.pdf
 ```
 
-### File System Module Documentation
+### FLEXBUS Module Documentation (FLEXBUS)
 
-This module document primarily includes the development documentation related to the file system on the Rockchip platform.
+This module documentation mainly contains development documentation related to FLEXBUS on the Rockchip platform.
 
 ```
-docs/en/Common/FS/
-└── Rockchip_Developer_FAQ_FileSystem_EN.pdf
+docs/en/Common/FLEXBUS/
+├── Rockchip_Developer_Guide_Linux_FLEXBUS_ADC_and_DAC_MODE_EN.pdf
+├── Rockchip_Developer_Guide_Linux_FLEXBUS_EN.pdf
+└── Rockchip_Developer_Guide_Linux_FLEXBUS_FSPI_MODE_EN.pdf
 ```
 
 ### Ethernet Module Document (GMAC)
@@ -298,10 +318,6 @@ It contains ISP development documents, VI driver development documents, IQ Tool 
 
 ```
 docs/en/Common/ISP/
-├── ISP1.X
-├── ISP21
-├── ISP30
-├── ISP32-lite
 └── The-Latest-Camera-Documents-Link.txt
 ```
 
@@ -375,10 +391,10 @@ Basic functions are as follows:
 For specific usage instructions, please refer to the current `doc/` directory documentation:
 
 ```
-├── 01_Rockchip_RKNPU_Quick_Start_RKNN_SDK_V2.0.0beta0_EN.pdf
+├── 01_Rockchip_RKNPU_Quick_Start_RKNN_SDK_V2.3.0_EN.pdf
 ...
-├── RKNNToolKit2_API_Difference_With_Toolkit1-V2.0.0beta0.md
-└── RKNNToolKit2_OP_Support-v2.0.0-beta0.md
+├── RKNNToolKit2_API_Difference_With_Toolkit1-V2.3.0.md
+└── RKNNToolKit2_OP_Support-v2.3.0.md
 
 ```
 
@@ -389,9 +405,9 @@ For specific usage instructions, please refer to the current `doc/` directory do
 
 ```
 ...
-├── 02_Rockchip_RKNPU_User_Guide_RKNN_SDK_V2.0.0beta0_EN.pdf
-├── 03_Rockchip_RKNPU_API_Reference_RKNN_Toolkit2_V2.0.0beta0_EN.pdf
-└── 04_Rockchip_RKNPU_API_Reference_RKNNRT_V2.0.0beta0_EN.pdf
+├── 02_Rockchip_RKNPU_User_Guide_RKNN_SDK_V2.3.0_EN.pdf
+├── 03_Rockchip_RKNPU_API_Reference_RKNN_Toolkit2_V2.3.0_EN.pdf
+└── 04_Rockchip_RKNPU_API_Reference_RKNNRT_V2.3.0_EN.pdf
 ```
 
 ### NVM Module Document (NVM)
@@ -400,10 +416,12 @@ It mainly introduces the boot process on the Rockchip platform, configuring and 
 
 ```
 docs/en/Common/NVM/
-├── Rockchip_Application_Notes_Storage_EN.pdf
-├── Rockchip_Developer_FAQ_Storage_EN.pdf
-├── Rockchip_Developer_Guide_Dual_Storage_EN.pdf
-└── Rockchip_Developer_Guide_SATA_EN.pdf
+├── Rockchip_Application_Notes_Storage_CN.pdf
+├── Rockchip_Developer_FAQ_Storage_CN.pdf
+├── Rockchip_Developer_Guide_Dual_Storage_CN.pdf
+├── Rockchip_Developer_Guide_Linux_Flash_Open_Source_Solution_CN.pdf
+├── Rockchip_Developer_Guide_SATA_CN.pdf
+└── Rockchip_Developer_Guide_UFS_CN.pdf
 ```
 
 ### PCIe Module Document (PCIe)
@@ -425,12 +443,8 @@ Introduction to PERF Performance analysis on Rockchip Platform
 
 ```
 docs/en/Common/PERF/
-├── Rockchip_Develop_Guide_Linux_RealTime_Performance_Test_Report_EN.pdf
-├── Rockchip_Optimize_Tutorial_Linux_IO_EN.pdf
-├── Rockchip_Quick_Start_Linux_Perf_EN.pdf
-├── Rockchip_Quick_Start_Linux_Performance_Analyse_EN.pdf
-├── Rockchip_Quick_Start_Linux_Streamline_EN.pdf
-└── Rockchip_Quick_Start_Linux_Systrace_EN.pdf
+├── Rockchip_Developer_Guide_Linux_RealTime_Performance_Test_Report_CN.pdf
+└── Rockchip_Quick_Start_Linux_Performance_Analyse_CN.pdf
 ```
 
 ### GPIO Module Document (PINCTRL)
@@ -520,9 +534,6 @@ Instructions for using tools such as partitioning, mass production burning, and 
 
 ```
 docs/en/Common/TOOL/
-├── Production-Guide-For-Firmware-Download.pdf
-├── RKUpgrade_Dll_UserManual.pdf
-├── Rockchip-User-Guide-ProductionTool-EN.pdf
 ├── Rockchip_Introduction_Partition_EN.pdf
 └── Rockchip_User_Guide_Production_For_Firmware_Download_EN.pdf
 ```
@@ -557,12 +568,7 @@ Introduction to U-Boot related development on the Rockchip platform
 
 ```
 docs/en/Common/UBOOT/
-├── Rockchip_Developer_Guide_Linux_AB_System_EN.pdf
-├── Rockchip_Developer_Guide_U-Boot_TFTP_Upgrade_EN.pdf
-├── Rockchip_Developer_Guide_UBoot_MMC_Device_Analysis_EN.pdf
-├── Rockchip_Developer_Guide_UBoot_MTD_Block_Device_Design_EN.pdf
-├── Rockchip_Developer_Guide_UBoot_Nextdev_EN.pdf
-└── Rockchip_Introduction_UBoot_rkdevelop_vs_nextdev_EN.pdf
+└── Rockchip_Developer_Guide_UBoot_Nextdev_EN.pdf
 ```
 
 ### USB Module Document (USB)
@@ -572,7 +578,6 @@ Introduction to USB development guide, USB signal testing and debugging tools on
 ```
 docs/en/Common/USB/
 ├── Rockchip_Developer_Guide_Linux_USB_Initialization_Log_Analysis_EN.pdf
-├── Rockchip_Developer_Guide_Linux_USB_PHY_EN.pdf
 ├── Rockchip_Developer_Guide_Linux_USB_Performance_Analysis_EN.pdf
 ├── Rockchip_Developer_Guide_USB2_Compliance_Test_EN.pdf
 ├── Rockchip_Developer_Guide_USB_EN.pdf
@@ -581,7 +586,6 @@ docs/en/Common/USB/
 ├── Rockchip_Developer_Guide_USB_SQ_Test_EN.pdf
 ├── Rockchip_Introduction_USB_SQ_Tool_EN.pdf
 ├── Rockchip_RK3399_Developer_Guide_USB_EN.pdf
-├── Rockchip_RK3399_Developer_Guide_USB_DTS_EN.pdf
 ├── Rockchip_RK356x_Developer_Guide_USB_EN.pdf
 ├── Rockchip_RK3588_Developer_Guide_USB_EN.pdf
 ├── Rockchip_Trouble_Shooting_Linux4.19_USB_Gadget_UVC_EN.pdf
@@ -636,9 +640,8 @@ Self developed audio algorithm on Rockchip platform.
 
 ```
 docs/en/Linux/Audio/
-├── Rockchip_Developer_Guide_Microphone_Array_TEST_EN.pdf
-├── Rockchip_Developer_Guide_Microphone_Array_Tuning.pdf
-└── Rockchip_Introduction_Linux_Audio_3A_Algorithm_EN.pdf
+├── Algorithms
+└── Rockchip_Developer_Guide_PulseAudio_EN.pdf
 ```
 
 ### Camera Development Documents (Camera)
@@ -662,6 +665,15 @@ docs/en/Linux/Docker/
 ├── Rockchip_Developer_Guide_Debian_Docker_EN.pdf
 ├── Rockchip_Developer_Guide_Linux_Docker_Deploy_EN.pdf
 └── Rockchip_User_Guide_SDK_Docker_EN.pdf
+```
+
+### DPDK Module (DPDK)
+
+DPDK development guide on Rockchip Linux platform.
+
+```
+docs/en/Linux/DPDK/
+└── Rockchip_Developer_Guide_Linux_DPDK_EN.pdf
 ```
 
 ### Graphics Development Documents (Graphics)
@@ -804,15 +816,6 @@ docs/en/Linux/Wifibt/
 ├── Rockchip_Developer_Guide_Linux_WIFI_BT_EN.pdf
 ├── WIFIBT programming interface
 └── WIFI performance testing PC tool
-```
-
-### DPDK Module (DPDK)
-
-DPDK development guide on Rockchip Linux platform.
-
-```
-docs/en/Linux/DPDK/
-└── Rockchip_Developer_Guide_Linux_DPDK_EN.pdf
 ```
 
 ## Chip Platform Related Documents (Socs)
