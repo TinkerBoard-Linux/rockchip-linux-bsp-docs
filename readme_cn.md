@@ -655,7 +655,6 @@ docs/cn/Common/WATCHDOG/
 
 ```
 docs/cn/Linux/ApplicationNote/
-├── Rockchip_Developer_Guide_Linux_Flash_Open_Source_Solution_CN.pdf
 ├── Rockchip_Developer_Guide_Linux_RKIPC_CN.pdf
 ├── Rockchip_Instruction_Linux_ROS2_CN.pdf
 ├── Rockchip_Instruction_Linux_ROS_CN.pdf
@@ -702,7 +701,6 @@ docs/cn/Linux/DPDK/
 docs/cn/Linux/Docker/
 ├── Rockchip_Developer_Guide_Debian_Docker_CN.pdf
 ├── Rockchip_Developer_Guide_Linux_Docker_Deploy_CN.pdf
-└── Rockchip_User_Guide_SDK_Docker_CN.pdf
 ```
 
 ### 显示相关开发（Graphics）
@@ -802,10 +800,8 @@ docs/cn/Linux/Profile/
 
 ```
 docs/cn/Linux/Recovery/
-├── Rockchip_Developer_Guide_Linux_DFU_Upgrade_CN.pdf
 ├── Rockchip_Developer_Guide_Linux_Recovery_CN.pdf
 ├── Rockchip_Developer_Guide_Linux_Upgrade_CN.pdf
-└── Rockchip_Introduction_Smart_Screen_OTA_CN.pdf
 ```
 
 ### 安全方案（Security）
@@ -844,11 +840,7 @@ docs/cn/Linux/Uefi/
 
 ```
 docs/cn/Linux/Wifibt/
-├── AP模组RF测试文档
-├── REALTEK模组RF测试文档
 ├── Rockchip_Developer_Guide_Linux_WIFI_BT_CN.pdf
-├── WIFIBT编程接口
-└── WIFI性能测试PC工具
 ```
 
 ## 芯片平台相关文档 (Socs)

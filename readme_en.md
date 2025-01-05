@@ -627,7 +627,6 @@ Development instructions for applications on the Rockchip platform, such as ROS,
 
 ```
 docs/en/Linux/ApplicationNote/
-├── Rockchip_Developer_Guide_Linux_Flash_Open_Source_Solution_EN.pdf
 ├── Rockchip_Instruction_Linux_ROS2_EN.pdf
 ├── Rockchip_Instruction_Linux_ROS_EN.pdf
 ├── Rockchip_Quick_Start_Linux_USB_Gadget_EN.pdf
@@ -664,7 +663,6 @@ Docker build and development of third-party systems such as Debian/Buildroot on 
 docs/en/Linux/Docker/
 ├── Rockchip_Developer_Guide_Debian_Docker_EN.pdf
 ├── Rockchip_Developer_Guide_Linux_Docker_Deploy_EN.pdf
-└── Rockchip_User_Guide_SDK_Docker_EN.pdf
 ```
 
 ### DPDK Module (DPDK)
@@ -769,10 +767,8 @@ An introduction to the recovery development process and upgrade during OTA upgra
 
 ```
 docs/en/Linux/Recovery/
-├── Rockchip_Developer_Guide_Linux_DFU_Upgrade_EN.pdf
 ├── Rockchip_Developer_Guide_Linux_Recovery_EN.pdf
 ├── Rockchip_Developer_Guide_Linux_Upgrade_EN.pdf
-└── Rockchip_Introduction_Smart_Screen_OTA_EN.pdf
 ```
 
 ### Security Solution (Security)
@@ -811,11 +807,7 @@ Introduction to the development of WIFI, BT, etc. on Rockchip Linux platform。
 
 ```
 docs/en/Linux/Wifibt/
-├── AP module RF test document
-├── REALTEK module RF test document
 ├── Rockchip_Developer_Guide_Linux_WIFI_BT_EN.pdf
-├── WIFIBT programming interface
-└── WIFI performance testing PC tool
 ```
 
 ## Chip Platform Related Documents (Socs)
@@ -856,7 +848,6 @@ For other reference documents, such as Repo mirror environment construction, Roc
 ```
 docs/en/Others/
 ├── Rockchip_Developer_Guide_Repo_Mirror_Server_Deploy_EN.pdf
-├── Rockchip_Trouble_Shooting_Linux_Real-Time_Performance_EN.pdf
 ├── Rockchip_User_Guide_Bug_System_EN.pdf
 └── Rockchip_User_Guide_SDK_Application_And_Synchronization_EN.pdf
 ```
